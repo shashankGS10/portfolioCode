@@ -1,13 +1,15 @@
 {
-  "homepage": "http://ShashankGS10.github.io/portfolioCode",
+  "homepage": "https://ShashankGS10.github.io/portfolioCode",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "predeploy":"npm run build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "next": "12.3.1",
